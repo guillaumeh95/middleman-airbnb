@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <% data.cities.each do |city| %>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/<%= city.slug %>');">
+        <div class="card-category"> <%= city.title %> </div>
+        <div class="card-description">
+          <h2>Le Wagon <%= city.name %></h2>
+          <p> <%= city.description %> </p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/<%= city.driver %>">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+
+
