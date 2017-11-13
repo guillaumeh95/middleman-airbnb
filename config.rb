@@ -20,3 +20,8 @@ activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
 end
+
+# Create the pages dynamic view for each page
+["alexialet", "donatienrolland", "nreix", "guillaumeh95", "papillard", "ssaunier"].each do |name|
+  proxy "/flats/#{name}.html", "/flats/show.html", locals: { owner: name }, ignore: true
+end

@@ -1,0 +1,26 @@
+.booking-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 100px;
+}
+
+.booking-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.booking-name {
+  padding-left: 30px;
+}
+
+.avatar-medium {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.rating {
+  color: $yellow !important;
+}
